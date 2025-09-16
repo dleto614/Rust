@@ -103,6 +103,12 @@ To create:
 cargo new guess-rand
 ```
 
+Install the rand library:
+
+```bash
+cargo add rand
+```
+
 To run:
 
 ```bash
