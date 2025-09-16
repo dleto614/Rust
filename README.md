@@ -20,6 +20,8 @@ members = [
   "guess-rand",
   "hello-world"
 ]
+
+resolver = "3"
 ```
 
 This I guess is how workspaces work with Cargo. I am not exactly sure what this is for, but will probably learn when I code more Rust.
