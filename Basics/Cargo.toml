@@ -1,0 +1,6 @@
+[workspace]
+members = [
+  "ferris-say",
+  "guess-rand",
+  "hello-world"
+]

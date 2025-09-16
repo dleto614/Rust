@@ -4,6 +4,26 @@
 
 Not my favorite language, but whatever. (I hate the syntax and it has quirks that I don't like which I think Golang does a lot better)
 
+## Notes:
+
+This is just general notes like getting rust-analyzer to work properly in my VS Codium (VS Code).
+
+Have to create a Cargo.toml in folders like for example in the folder "Basics":
+
+```bash
+cd Basics/
+vim Cargo.toml
+...
+[workspace]
+members = [
+  "ferris-say",
+  "guess-rand",
+  "hello-world"
+]
+```
+
+This I guess is how workspaces work with Cargo. I am not exactly sure what this is for, but will probably learn when I code more Rust.
+
 ### Hello world:
 
 Your typical "Hello world!" program.
