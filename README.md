@@ -72,3 +72,46 @@ To build:
 cargo build --release
 cargo run --release
 ```
+
+### Guess random number:
+
+This was a bit of a doozy, but wanted to play around with functions, return, if-else, etc.
+
+Just randomly generates a number from 1 to 101 and prints it, but you gotta guess. Printing to STDOUT is to make sure this program works. After you type in a number or letter, it checks to see if valid or not. If isn't a valid input, it does throw an error and gracefully returns/exits.
+
+I realized that `.expect()` just panicks which is unacceptable and wanted to handle errors/exceptions properly.
+
+Here is an example in `main()`:
+
+```rust
+    // Try parsing input.
+    // Handle invalid input gracefully.
+    guess = match input.trim().to_string().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("Invalid input. Please enter a number.");
+            return; // Exit early without panicking
+        }
+    };
+```
+
+Probably will grow on me and looks clean enough.
+
+To create:
+
+```bash
+cargo new guess-rand
+```
+
+To run:
+
+```bash
+cargo run
+```
+
+To build:
+
+```bash
+cargo build --release
+cargo run --release
+```
