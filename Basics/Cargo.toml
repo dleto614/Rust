@@ -4,3 +4,5 @@ members = [
   "guess-rand",
   "hello-world"
 ]
+
+resolver = "3"
