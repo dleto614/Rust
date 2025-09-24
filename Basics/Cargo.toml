@@ -1,6 +1,7 @@
 [workspace]
 members = [
   "ferris-say",
+  "file-io",
   "guess-rand",
   "hello-world"
 ]
